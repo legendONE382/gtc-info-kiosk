@@ -1,1 +1,0 @@
-# gtc-info-kiosk
