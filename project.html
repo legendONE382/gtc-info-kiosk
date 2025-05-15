@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GTC Agidingbi Info Kiosk</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../Exhibition/bootstrap-5.3.6-dist/css/bootstrap.min.css">
+  <script src="../Exhibition/bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body { font-family: "Roboto", sans-serif; }
+    .section { padding: 32px; }
+    .w3-card { margin-bottom: 16px; }
+    .title-bar { background: #003366; color: white; padding: 16px; }
+    .title-bar h1 { margin: 0; }
+     
+    body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+body.dark-mode .w3-light-grey {
+  background-color: #1e1e1e !important;
+  color: #f1f1f1 !important;
+}
+body.dark-mode .w3-card {
+  background-color: #222 !important;
+  color: #eee;
+}
+ .button { margin-right: 2%; }
+
+
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="w3-container title-bar w3-center">
+  <h1 title="About the School"><i class="fa-solid fa-school"></i> GTC Agidingbi Smart Info Kiosk</h1>
+  <p class="w3-large">"Knowledge, Skill, Integrity"</p>
+</header>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <div class="navbar-nav mx-auto">
+      <button class="nav-item btn btn-primary" onclick="showSection('home')" style="margin: 1%;">Home</button>
+      <button class="nav-item btn btn-primary" onclick="showSection('timetable')" style="margin: 1%;">Timetable</button>
+      <button class="nav-item btn btn-primary" onclick="showSection('departments')" style="margin: 1%;">Departments</button>
+      <button class="nav-item btn btn-primary" onclick="showSection('principal')" style="margin: 1%;">Principal</button>
+      <button class="nav-item btn btn-primary" onclick="showSection('gallery')" style="margin: 1%;">Gallery</button>
+      <button class="nav-item btn btn-primary" onclick="showSection('teachers')" style="margin: 1%;">Managment</button>
+
+
+      <button class="w3-bar-item w3-button" onclick="toggleDarkMode()">
+    <i class="fa-solid fa-moon"></i> Dark Mode
+  </button>
+    </div>
+  </div>
+</nav>
+
+
+  
+
+<!-- Sections -->
+<div id="home" class="container section">
+  <h2>Welcome to Government Technical College, Agidingbi</h2>
+  <p>This kiosk helps students, parents, and visitors learn more about the school.</p>
+</div>
+
+<div id="timetable" class="w3-container section" style="display:none">
+  <h2>School Timetable</h2>
+  <div class="dropdown dropdown-menu-end">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+      COMPUTER CRAFT
+    </button>
+    <ul class="dropdown-menu">
+      <table class="table table-bordered table-hoverable">
+        <tr><th>CLASS</th><th>General Subject</th><th>Trade Components/ SECTIONAL SUBJECTS</th></tr>
+        <tr><td>TECH 1</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Intro to computer, Computer Craft, Computer opreation</td></tr>
+        <tr><td>TECH 2</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>intro to computer, Computer Craft</td></tr>
+        <tr><td>TECH 3</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>intro to computer, Computer Craft</td></tr>
+
+        <!-- Add more -->
+      </table>
+    </ul>
+  </div>
+
+  <div class="dropdown dropdown-menu-end">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" style="margin-top: 2%;">  
+      ELECTRICAL INSTALLATION
+    </button>``
+    <ul class="dropdown-menu" style="margin-top: 2%;">
+<table class="table table-bordered table-hoverable">
+        <tr><th>CLASS</th><th>General Subject</th><th>Trade Components/ SECTIONAL SUBJECTS</th></tr>
+        <tr><td>TECH 1</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Implements and machines, Suspension, Sterring and Braking System, Engine reconditioning</td></tr>
+        <tr><td>TECH 2</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Implements and machines, Suspension, Sterring and Braking System, Engine reconditioning</td></tr>
+        <tr><td>TECH 3</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Implements and machines, Suspension, Sterring and Braking System, Engine reconditioning</td></tr>
+
+        <!-- Add more -->
+      </table>
+    </ul>
+  </div>
+
+   <div class="dropdown dropdown-menu-end">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" style="margin-top: 2%;">  
+      ELECTRONICS WORKS
+    </button>``
+    <ul class="dropdown-menu" style="margin-top: 2%;">
+   <table class="table table-bordered table-hoverable">
+        <tr><th>CLASS</th><th>General Subject</th><th>Trade Components/ SECTIONAL SUBJECTS</th></tr>
+        <tr><td>TECH 1</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Electronics Device and Circuits, Electrical drawing</td></tr>
+        <tr><td>TECH 2</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Electronics Device and Circuits, Radio Communication, Televison Theory</td></tr>
+        <tr><td>TECH 3</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Electronics Device and Circuits, Televison Theory</td></tr>
+
+        <!-- Add more -->
+      </table>
+    </ul>
+  </div>
+
+  <div class="dropdown dropdown-menu-end">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" style="margin-top: 2%;">  
+      GARMENT MAKING
+    </button>``
+    <ul class="dropdown-menu" style="margin-top: 2%;">
+   <table class="table table-bordered table-hoverable">
+        <tr><th>CLASS</th><th>General Subject</th><th>Trade Components/ SECTIONAL SUBJECTS</th></tr>
+        <tr><td>TECH 1</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Implements and machines, </td></tr>
+        <tr><td>TECH 2</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Electronics Device and Circuits, Radio Communication, Televison Theory</td></tr>
+        <tr><td>TECH 3</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Electronics Device and Circuits, Televison Theory</td></tr>
+
+        <!-- Add more -->
+      </table>
+    </ul>
+  </div>
+  <div class="dropdown dropdown-menu-end">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" style="margin-top: 2%;">  
+      FOOTWEAR AND LEATHER CRAFT
+    </button>``
+    <ul class="dropdown-menu" style="margin-top: 2%;">
+   <table class="table table-bordered table-hoverable">
+        <tr><th>CLASS</th><th>General Subject</th><th>Trade Components/ SECTIONAL SUBJECTS</th></tr>
+        <tr><td>TECH 1</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Electronics Device and Circuits, Electrical drawing</td></tr>
+        <tr><td>TECH 2</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Electronics Device and Circuits, Radio Communication, Televison Theory</td></tr>
+        <tr><td>TECH 3</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Electronics Device and Circuits, Televison Theory</td></tr>
+
+        <!-- Add more -->
+      </table>
+    </ul>
+  </div>
+  <div class="dropdown dropdown-menu-end">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" style="margin-top: 2%;">  
+      GRAPHICS ARTS
+    </button>``
+    <ul class="dropdown-menu" style="margin-top: 2%;">
+   <table class="table table-bordered table-hoverable">
+        <tr><th>CLASS</th><th>General Subject</th><th>Trade Components/ SECTIONAL SUBJECTS</th></tr>
+        <tr><td>TECH 1</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Electronics Device and Circuits, Electrical drawing</td></tr>
+        <tr><td>TECH 2</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Electronics Device and Circuits, Radio Communication, Televison Theory</td></tr>
+        <tr><td>TECH 3</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Electronics Device and Circuits, Televison Theory</td></tr>
+
+        <!-- Add more -->
+      </table>
+    </ul>
+  </div>
+
+  <div class="dropdown dropdown-menu-end">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" style="margin-top: 2%;">  
+      CATERING CRAFT PRACTICE
+    </button>``
+    <ul class="dropdown-menu" style="margin-top: 2%;">
+   <table class="table table-bordered table-hoverable">
+        <tr><th>CLASS</th><th>General Subject</th><th>Trade Components/ SECTIONAL SUBJECTS</th></tr>
+        <tr><td>TECH 1</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Electronics Device and Circuits, Electrical drawing</td></tr>
+        <tr><td>TECH 2</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Electronics Device and Circuits, Radio Communication, Televison Theory</td></tr>
+        <tr><td>TECH 3</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Electronics Device and Circuits, Televison Theory</td></tr>
+
+        <!-- Add more -->
+      </table>
+    </ul>
+  </div>
+  <div class="dropdown dropdown-menu-end">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" style="margin-top: 2%;">  
+      BUSINESS STUDIES
+    </button>``
+    <ul class="dropdown-menu" style="margin-top: 2%;">
+   <table class="table table-bordered table-hoverable">
+        <tr><th>CLASS</th><th>General Subject</th><th>Trade Components/ SECTIONAL SUBJECTS</th></tr>
+        <tr><td>TECH 1</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Electronics Device and Circuits, Electrical drawing</td></tr>
+        <tr><td>TECH 2</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Electronics Device and Circuits, Radio Communication, Televison Theory</td></tr>
+        <tr><td>TECH 3</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Electronics Device and Circuits, Televison Theory</td></tr>
+
+        <!-- Add more -->
+      </table>
+    </ul>
+  </div>
+
+  <div class="dropdown dropdown-menu-end">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" style="margin-top: 2%;">  
+      REFRIGRIATION AND AIR-CONDITIONING WORKS
+    </button>
+    <ul class="dropdown-menu" style="margin-top: 2%;">
+   <table class="table table-bordered table-hoverable">
+        <tr><th>CLASS</th><th>General Subject</th><th>Trade Components/ SECTIONAL SUBJECTS</th></tr>
+        <tr><td>TECH 1</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Basic priciples of refrigeration and Basic principles of air-conditioning and (PICL) cmpressors motors generators changing of refrigeration and oil(CMGAA), refrigeration & Air- conditioning heat exchange refrigeration & Air conditioing controls </td></tr>
+        <tr><td>TECH 2</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Basic priciples of refrigeration and Basic principles of air-conditioning and oil (PICL)</td></tr>
+        <tr><td>TECH 3</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Basic priciples of refrigeration and Basic principles of air-conditioning and oil (PICL)</td></tr>
+
+        
+        <!-- Add more -->
+      </table>
+    </ul>
+  </div>
+  
+  <div class="dropdown dropdown-menu-end">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" style="margin-top: 2%;">  
+      INSTRUMENT MECHANICS WORKS
+    </button>``
+    <ul class="dropdown-menu" style="margin-top: 2%;">
+   <table class="table table-bordered table-hoverable">
+        <tr><th>CLASS</th><th>General Subject</th><th>Trade Components/ SECTIONAL SUBJECTS</th></tr>
+        <tr><td>TECH 1</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Elect/Elect instrumentation, pneumatic, instrumentaton  </td></tr>
+        <tr><td>TECH 2</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Elect/Elect instrumentation, pneumatic, instrumentaton automatic controls</td></tr>
+        <tr><td>TECH 3</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Elect/Elect instrumentation, pneumatic, instrumentaton laboratory process</td></tr>
+
+        <!-- Add more -->
+      </table>
+    </ul>
+  </div>
+  <div class="dropdown dropdown-menu-end">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" style="margin-top: 2%;">  
+      CONSTRUCTION DEPARTMENT
+    </button>``
+    <ul class="dropdown-menu" style="margin-top: 2%;">
+   <table class="table table-bordered table-hoverable">
+        <tr><th>CLASS</th><th>General Subject</th><th>Trade Components/ SECTIONAL SUBJECTS</th></tr>
+        <tr><td>TECH 1</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Electronics Device and Circuits, Electrical drawing</td></tr>
+        <tr><td>TECH 2</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Electronics Device and Circuits, Radio Communication, Televison Theory</td></tr>
+        <tr><td>TECH 3</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Electronics Device and Circuits, Televison Theory</td></tr>
+
+        <!-- Add more -->
+      </table>
+    </ul>
+  </div>
+  <div class="dropdown dropdown-menu-end">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" style="margin-top: 2%;">  
+      CREATIVE CARPENTARY & JOINERY DEPARTMENT
+    </button>
+    <ul class="dropdown-menu" style="margin-top: 2%;">
+   <table class="table table-bordered table-hoverable">
+        <tr><th>CLASS</th><th>General Subject</th><th>Trade Components/ SECTIONAL SUBJECTS</th></tr>
+        <tr><td>TECH 1</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Carpentary & and joinery craft spray painting, machine wood-work </td></tr>
+        <tr><td>TECH 2</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Carpentary & and joinery craft spray painting, machine wood-work </td></tr>
+        <tr><td>TECH 3</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>Carpentary & and joinery craft spray painting, machine wood-work </td></tr>
+
+        <!-- Add more -->
+      </table>
+    </ul>
+  </div>
+
+  <div class="dropdown dropdown-menu-end">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" style="margin-top: 2%;">  
+      FURNITURE CRAFT
+    </button>
+    <ul class="dropdown-menu" style="margin-top: 2%;">
+   <table class="table table-bordered table-hoverable">
+        <tr><th>CLASS</th><th>General Subject</th><th>Trade Components/ SECTIONAL SUBJECTS</th></tr>
+        <tr><td>TECH 1</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>furniture design & construction spray painting, machine wood work </td></tr>
+        <tr><td>TECH 2</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>furniture design & construction spray painting, machine wood work upholstrey design and constuction </td></tr>
+        <tr><td>TECH 3</td><td>Mathematics, Eng, Econs, physics Chemistry, I,C,T Enterpenuship</td><td>furniture design & construction spray painting, machine wood work upholstrey design and constuction </td></tr>
+
+        <!-- Add more -->
+      </table>
+    </ul>
+  </div>
+  <!-- Add more dropdowns here for other subjects -->
+</div>
+
+<div id="departments" class="container section" style="display:none">
+  <h2>Departments</h2>
+  <div class="w3-card w3-padding">
+    <h3>COMPUTER CRAFT PRACTICE</h3>
+    <h3>HEAD OF SECTION: </h3>
+    <span>MR. RAHEEM RASHEED BABATUNDE</span>
+    <p>The trade is desidned to produce component craftts men in computer Craft.</p>
+  </div>
+  <div class="w3-card w3-padding">
+    <h3>ELECTRICAL INSTALLATION AND MAINTANANCE</h3>
+    <h3>HEAD OF SECTION:</h3>
+    <span>MRS. AFOLABI, KEHINDE OLUYEMISI</span>
+
+    <p>This course is meant to student with the knowledge and skills to enable them install, maintain and repair domestic and industrial eqipment and machine.</p>
+  </div>
+ <div class="w3-card w3-padding">
+    <h3>INSTRUMENT MECHANIC WORKS</h3>
+    <h3>HEAD OF DEPARTMENT: </h3>
+    <span>LAWAL ABDULAHI ADEKUNLE</span>
+    <p>The aim of this cporse is to provide industrial instrumentation that wil sufficiently grant them gainful employment in any of the automated industries throught the country and beyond.</p>
+  </div>
+  
+  <div class="w3-card w3-padding">
+    <h3>ELECTRONICS WORKS</h3>
+    <h3>HEAD OF DEPARTMENT: </h3>
+    <span>MR. SALAU KEHINDE</span>
+    <p>This course is meant to provide component radio and electronic technicians with theorotical knowledge and practical skills wich will enable the tranie to install maintain and repair electronic equipment.</p>
+  </div>
+  
+  <div class="w3-card w3-padding">
+    <h3>REFRIGRIATION AND AIR-CONDITIONING</h3>
+    <h3>HEAD OF DEPARTMENT: </h3>
+    <span>KEHINDE GABRIEL OLAYIWOLA </span>
+    <p>Designed to produce skilled crafts men who will be capable of instaling, maintaining and repairing domestic and industrial air conditioning systems.</p>
+  </div>
+  
+
+  
+  <div class="w3-card w3-padding">
+    <h3>ACHITECTURAL DRAUGHTMANSHIP</h3>
+    <h3>HEAD OF DEPARTMENT: </h3>
+    <span>OYEDELE ADADOJA IYABO</span>
+    <p>This is designed to prapare student as master DRAUGHT men, to assist qulified achitects in architectural firms and also to futher their education to teritery institutions.</p>
+  </div>
+  
+  <div class="w3-card w3-padding">
+    <h3>FURNITURE CRAFT</h3>
+    <h3>HEAD OF DEPARTMENT: </h3>
+    <span>MR. MAKINDE OLUWASESI AKINWUMI</span>
+    <p>This course is designed to produce skilled craftsmen in production of home and office furniture and cabinets making .</p>
+  </div>
+
+  
+  <div class="w3-card w3-padding">
+    <h3>GARMENT MAKING</h3>
+    <h3>HEAD OF DEPARTMENT: </h3>
+    <span>TAKURE ESEOGHENE JULIET</span>
+    <p>To expose students to the fundamentals to general ladies garment making, there by making them skilled and self reliant.</p>
+  </div>
+  <div class="w3-card w3-padding">
+    <h3>FOOTWEAR AND LEATHER CRAFTS</h3>
+    <h3>HEAD OF DEPARTMENT: </h3>
+    <span>MRS. JUSTIN ETUNNUM ORUN</span>
+    <p>This course is meant to provide component radio and electronic technicians with theorotical knowledge and practical skills wich will enable the tranie to install maintain and repair electronic equipment.</p>
+  </div>
+  
+   <div class="w3-card w3-padding">
+    <h3>GRAPHIC ART</h3>
+    <h3>HEAD OF DEPARTMENT: </h3>
+    <span>DURODOLA ADEBOSE JAYEOLA</span>
+    <p>The trade is aimed at producing crafts men in graphic designing both in computer an general graphic drawings.</p>
+  </div>
+   
+  <div class="w3-card w3-padding">
+    <h3>CATERING CRAFT PRACTICE</h3>
+    <h3>HEAD OF DEPARTMENT: </h3>
+    <span>MR. ADESANYA EZEKIEL OLUSOJI</span>
+    <p>This course is designed to produce skilled men and women in food preparation, bakery and confectionaries, food service, food sicence and hygiene. Thereby develop individual styles of cooking and serving food in places like schools, colleges, halls of residence, hospitals, industies and companies.</p>
+  </div>
+  <div class="w3-card w3-padding">
+    <h3>BUSINESS STUDIES</h3>
+    <h3>HEAD OF DEPARTMENT: </h3>
+    <span>MR. ADEWALE GANIYAT BAYONLE</span>
+    <p>This course is designed to produce competent typist, stenographers and book-keepers well versed in office skills and managment which will enaable them to be gainfuly employed.</p>
+  </div>
+  
+</div>
+
+<div id="principal" class="w3-container section w3-card w3-padding w3-center" style="display:none">
+  <img src="../Exhibition/WIN_20250514_09_49_25_Pro.jpg" alt="Principal Photo" style="width:150px; height:150px; object-fit:cover; border-radius:50%; border: 4px solid #003366; margin-bottom:15px;">
+  <h3 style="color:#003366;">Mrs. YOMI SOYOMBO</h3>
+  <p><em>Principal of GTC Agidingbi</em></p>
+  <p>Welcome to our center of excellence where skill meets purpose! We believe in empowering our students with the best education and technical training.</p>
+</div>
+
+<div id="gallery" class="w3-container section" style="display:none">
+  
+    <div class="w3-col s6 m4">
+      <img src="../Exhibition/IMG-20250502-WA0049.jpg" style="width:100%" alt="Computer Lab">
+    </div>
+
+     <div class="w3-col s6 m4">
+      <img src="../Exhibition/20250514_154642.jpg" style="width:100%" alt="Computer Lab">
+    </div>
+         <div class="w3-col s6 m4">
+      <img src="../Exhibition/20250514_154703.jpg" style="width:100%" alt="Computer Lab">
+    </div>
+     <div class="w3-col s6 m4">
+      <img src="../Exhibition/20250514_154717.jpg" style="width:100%" alt="Computer Lab">
+    </div>
+
+     
+
+    <!-- Add more images -->
+  </div>
+</div>
+
+<div id="teachers" class="w3-container section" style="display:none">
+  <h2>OUR MANAGEMENT TEAM</h2>
+  <div class="w3-row-padding">
+
+    <div class="w3-third w3-card w3-margin">
+      <img src="teacher1.jpg" style="width:100%; height:200px; object-fit:cover;" alt="Teacher 1">
+      <div class="w3-container">
+        <h4>Mr. Babajide O. Soewu</h4>
+        <p>Vice principal Academics</p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-card w3-margin">
+      <img src="teacher2.jpg" style="width:100%; height:200px; object-fit:cover;" alt="Teacher 2">
+      <div class="w3-container">
+        <h4>Mrs. Eribake O. A.</h4>
+        <p>Vice Principal Administration</p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-card w3-margin">
+      <img src="teacher3.jpg" style="width:100%; height:200px; object-fit:cover;" alt="Teacher 3">
+      <div class="w3-container">
+        <h4>Mrs. Abolarin O. titilayo </h4>
+        <p>Vice Principal Special</p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-card w3-margin">
+      <img src="teacher3.jpg" style="width:100%; height:200px; object-fit:cover;" alt="Teacher 3">
+      <div class="w3-container">
+        <h4>Mr. Alademerin O. Adepariola </h4>
+        <p>Vice Principal & Industry Patnership</p>
+      </div>
+    </div>
+
+    <!-- Add more teachers as needed -->
+
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-padding w3-small w3-light-grey">
+  <h1>Correspondence</h1>
+  <p>The information here can be confirmed through the principal</p>
+  <div>
+    <h3>Contact</h3>
+    <p>Phone: 07065607532</p>
+    <p>Email: gotecolagos@yahoo.com</p>
+  </div>
+  &copy; 2025 GTC Agidingbi - Built by [Emmanuel] for more info visit: <a href="https://legendone382.github.io/expertCoder.github.io/">Expert Coder</a>
+</footer>
+
+<script>
+  function showSection(id) {
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(s => s.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+  }
+
+  // Optional: Show default section
+  showSection('home');
+
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+  }
+</script>
+
+</body>
+</html>
